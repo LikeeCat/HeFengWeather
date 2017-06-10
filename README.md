@@ -24,7 +24,24 @@
 - [x] 支持评论点赞
 - [x] 调用相机拍照和从图库选择图片
 
-##具体实现效果
+## 具体实现效果
+
+### 主页
+![image](https://github.com/xiangtaiduo/HeFengWeather/blob/master/QQDRAWER_SWIFT/%E6%88%AA%E5%9B%BE/%E5%9B%BE%E7%89%87%201.png)
+
+### 折线图界面
+![image](https://github.com/xiangtaiduo/HeFengWeather/blob/master/QQDRAWER_SWIFT/%E6%88%AA%E5%9B%BE/%E5%9B%BE%E7%89%879.png)
+
+### 添加城市界面
+![image](https://github.com/xiangtaiduo/HeFengWeather/blob/master/QQDRAWER_SWIFT/%E6%88%AA%E5%9B%BE/%E5%9B%BE%E7%89%872.png)
+### 个人中心界面
+![iamge](https://github.com/xiangtaiduo/HeFengWeather/blob/master/QQDRAWER_SWIFT/%E6%88%AA%E5%9B%BE/%E5%9B%BE%E7%89%87%206.png)
+### 朋友圈主页
+![image](https://github.com/xiangtaiduo/HeFengWeather/blob/master/QQDRAWER_SWIFT/%E6%88%AA%E5%9B%BE/%E5%9B%BE%E7%89%87%207.png)
+### 登录界面
+![image](https://github.com/xiangtaiduo/HeFengWeather/blob/master/QQDRAWER_SWIFT/%E6%88%AA%E5%9B%BE/%E5%9B%BE%E7%89%87%204.png)
+### 注册界面
+![image](https://github.com/xiangtaiduo/HeFengWeather/blob/master/QQDRAWER_SWIFT/%E6%88%AA%E5%9B%BE/%E5%9B%BE%E7%89%87%205.png)
 
 
 
