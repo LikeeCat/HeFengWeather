@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Wtw-uO-vpA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="和风天气" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnc-3g-xhk">
+                                <rect key="frame" x="76" y="90" width="168" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我们不仅关心每一天的天气我们更关心你的健康" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssC-HU-diE">
+                                <rect key="frame" x="31" y="323.5" width="247" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="OHX-gt-CNN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2017年 樊树康   All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ArT-4l-8yd">
+                                <rect key="frame" x="46" y="488" width="228" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Wtw-uO-vpA" secondAttribute="trailing" id="2v6-0R-YnO"/>
+                            <constraint firstItem="ArT-4l-8yd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="30" id="7kQ-1i-8KR"/>
+                            <constraint firstItem="qnc-3g-xhk" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="60" id="83c-hD-c3p"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ArT-4l-8yd" secondAttribute="bottom" constant="39" id="Dt2-kt-rIY"/>
+                            <constraint firstItem="Wtw-uO-vpA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="FlQ-4Y-AQ2"/>
+                            <constraint firstItem="qnc-3g-xhk" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="70" id="Iov-eA-shW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ArT-4l-8yd" secondAttribute="trailing" constant="30" id="OGC-95-qJo"/>
+                            <constraint firstItem="Wtw-uO-vpA" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="QbY-Bw-754"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qnc-3g-xhk" secondAttribute="trailing" constant="60" id="Ype-KG-vhm"/>
+                            <constraint firstItem="Wtw-uO-vpA" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="ZlL-T8-k8A"/>
+                            <constraint firstItem="ssC-HU-diE" firstAttribute="top" secondItem="qnc-3g-xhk" secondAttribute="bottom" constant="200" id="aE8-AD-HzB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ssC-HU-diE" secondAttribute="trailing" constant="26" id="fJ6-3l-Dff"/>
+                            <constraint firstItem="ArT-4l-8yd" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" constant="-527" id="hsc-R5-hXd"/>
+                            <constraint firstItem="ssC-HU-diE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="15" id="wTV-mP-Guo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="320" height="568"/>
+    </resources>
+</document>

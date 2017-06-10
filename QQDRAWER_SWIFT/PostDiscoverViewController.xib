@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostDiscoverViewController" customModule="和风天气" customModuleProvider="target">
+            <connections>
+                <outlet property="bg" destination="D2X-oS-AZa" id="Q2g-oV-5Fl"/>
+                <outlet property="img" destination="GeB-gZ-oPq" id="vfb-S8-5in"/>
+                <outlet property="text" destination="enc-2K-QP1" id="jZu-zz-ILK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="asA-el-EsY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D2X-oS-AZa">
+                    <rect key="frame" x="-20" y="-20" width="415" height="707"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3x-qc-1QK">
+                    <rect key="frame" x="315" y="20" width="31" height="30"/>
+                    <state key="normal" title="发表">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="post:" destination="-1" eventType="touchUpInside" id="elX-eV-YmB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVD-HN-Z73">
+                    <rect key="frame" x="31" y="20" width="31" height="30"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="mYr-9H-bYf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buz-qu-cOW" userLabel="添加图片">
+                    <rect key="frame" x="100" y="344" width="175" height="30"/>
+                    <state key="normal" title="添加图片">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="camera:" destination="-1" eventType="touchUpInside" id="JZR-nM-204"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.25" contentMode="scaleToFill" text="今天你想到了什么。。。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="enc-2K-QP1">
+                    <rect key="frame" x="23" y="90" width="323" height="176"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="176" id="yKW-yE-e5P"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GeB-gZ-oPq">
+                    <rect key="frame" x="35" y="382" width="305" height="197"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="197" id="g4x-Zv-yQY"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="enc-2K-QP1" secondAttribute="trailing" constant="29" id="1dY-9g-fOA"/>
+                <constraint firstAttribute="trailing" secondItem="buz-qu-cOW" secondAttribute="trailing" constant="100" id="4Ph-pi-RvH"/>
+                <constraint firstItem="GeB-gZ-oPq" firstAttribute="top" secondItem="enc-2K-QP1" secondAttribute="bottom" constant="116" id="909-jc-Agm"/>
+                <constraint firstAttribute="trailing" secondItem="GeB-gZ-oPq" secondAttribute="trailing" constant="35" id="9b3-Mg-GxN"/>
+                <constraint firstAttribute="bottom" secondItem="D2X-oS-AZa" secondAttribute="bottom" constant="-20" id="BTk-rt-UNh"/>
+                <constraint firstItem="D2X-oS-AZa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-20" id="KLs-Fz-Unp"/>
+                <constraint firstAttribute="trailing" secondItem="e3x-qc-1QK" secondAttribute="trailing" constant="29" id="NER-3s-ENo"/>
+                <constraint firstItem="enc-2K-QP1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="23" id="NyE-Hs-ITh"/>
+                <constraint firstItem="buz-qu-cOW" firstAttribute="top" secondItem="enc-2K-QP1" secondAttribute="bottom" constant="78" id="YZd-8l-tUb"/>
+                <constraint firstItem="GeB-gZ-oPq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="ZMN-b1-gLm"/>
+                <constraint firstItem="sVD-HN-Z73" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="31" id="Zud-Xg-F6V"/>
+                <constraint firstItem="sVD-HN-Z73" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="buX-8O-J22"/>
+                <constraint firstAttribute="trailing" secondItem="D2X-oS-AZa" secondAttribute="trailing" constant="-20" id="ihQ-bf-SZb"/>
+                <constraint firstItem="enc-2K-QP1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="mwi-Kp-EAP"/>
+                <constraint firstItem="e3x-qc-1QK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="qeq-jZ-7ss"/>
+                <constraint firstItem="D2X-oS-AZa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-20" id="y8G-Cl-5Wn"/>
+                <constraint firstItem="buz-qu-cOW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="yO2-fZ-op7"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
