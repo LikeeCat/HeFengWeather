@@ -1,10 +1,16 @@
 # HeFengWeather
+
 ##简介
 仿照墨迹天气写的一个天气预报，不仅能够查看天气情况，还能够发布动态，和好友一起分享此时此刻的心情。
 
 ##项目说明
- 项目    | 简介 ------- |-------------使用工具|Xcode 8.3.2 、CocoaPods使用语言|Objective-C、Swift 混合编程
-后台实现|LeanCloud##已经实现的功能
+ 项目    | 简介
+ ------- |-------------
+使用工具|Xcode 8.3.2 、CocoaPods
+使用语言|Objective-C、Swift 混合编程
+后台实现|LeanCloud
+
+##已经实现的功能
 - [x]GPS定位功能
 - [x]天气预报 Api 接口的 JSON获取
 - [x]JSON格式的数据的解析
