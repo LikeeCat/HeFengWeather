@@ -32,7 +32,7 @@ class WeatherViewController: UIViewController,UITableViewDataSource,UITableViewD
     var page = 0{
         
         didSet{
-            print("当前是第\(page) 现在的个数是\(cityListTableView.count)")
+//            print("当前是第\(page) 现在的个数是\(cityListTableView.count)")
 
             if citylist.count > cityListTableView.count{
                 
@@ -80,7 +80,7 @@ class WeatherViewController: UIViewController,UITableViewDataSource,UITableViewD
                 }
                     DispatchQueue.main.async
                         {
-                            print("保存好了👌")
+//                            print("保存好了👌")
                         }
             }
     }
@@ -197,7 +197,7 @@ class WeatherViewController: UIViewController,UITableViewDataSource,UITableViewD
         //进入app 打开天气列表 -> 2个
 //        if citylist.count > page {
         let tabHeight = self.tabBarController?.tabBar.frame.height
-        print("this is the \(tabHeight)")
+//        print("this is the \(tabHeight)")
         let tableHeight = self.view.frame.height - tabHeight! - height
             let tableview =  UITableView.init(frame:CGRect.init(x: CGFloat((citylist.count - 1) * Int(self.view.frame.width)), y: height, width: self.view.bounds.width, height: tableHeight), style: .plain)
             self.scroll?.addSubview(tableview)
@@ -213,7 +213,7 @@ class WeatherViewController: UIViewController,UITableViewDataSource,UITableViewD
     func loadTableViewFromFile(){
         for i in 0..<citylist.count{
             let tabHeight = self.tabBarController?.tabBar.frame.height
-            print("this is the \(tabHeight)")
+//            print("this is the \(tabHeight)")
             let tableHeight = self.view.frame.height - tabHeight! - height
             let tableview =  UITableView.init(frame:CGRect.init(x: CGFloat(i * Int(self.view.frame.width)), y: height, width: self.view.bounds.width, height: tableHeight), style: .plain)
             self.scroll?.addSubview(tableview)
@@ -259,8 +259,7 @@ class WeatherViewController: UIViewController,UITableViewDataSource,UITableViewD
             {
             let url =  NetworkHelper.netHelper.creatUrlRequest(cityName: cityName, type: .weather)
             do{
-                print(url)
-                
+//                print(url)
                 let jsonString = try String.init(contentsOf: url)
                 let jsonModel = Model.init(string: jsonString, error: nil)
                 let model = jsonModel?.heWeather5

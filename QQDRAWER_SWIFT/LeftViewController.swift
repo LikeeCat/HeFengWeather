@@ -75,7 +75,7 @@ class LeftViewController: UIViewController,UITableViewDataSource,UITableViewDele
             (self.myCityList as! NSArray).write(toFile:filePath, atomically: true)
             }
             DispatchQueue.main.async {
-                print("保存城市成功 😯")
+//                print("保存城市成功 😯")
             }
         }
     }

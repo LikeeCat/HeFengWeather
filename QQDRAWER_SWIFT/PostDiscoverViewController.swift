@@ -59,7 +59,7 @@ class PostDiscoverViewController: UIViewController ,UIImagePickerControllerDeleg
         record.userName = LCString.init(UserDefaults.standard.value(forKey: "loginUser") as! String)
         record.save()
         self.dismiss(animated: true) {
-            print("退出成功")
+//            print("退出成功")
         }
     }
 
@@ -104,7 +104,7 @@ class PostDiscoverViewController: UIViewController ,UIImagePickerControllerDeleg
     
     @IBAction func dismiss(_ sender: Any) {
         self.dismiss(animated: true) {
-            print("退出成功")
+//            print("退出成功")
         }
 
     }

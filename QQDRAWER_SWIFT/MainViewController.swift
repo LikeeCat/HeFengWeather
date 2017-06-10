@@ -35,7 +35,7 @@ class MainViewController: UITabBarController{
     func postMessage(){
         let postVC = PostDiscoverViewController()
         self.present(postVC, animated: true) { 
-            print("发送消息")
+//            print("发送消息")
         }
     }
     

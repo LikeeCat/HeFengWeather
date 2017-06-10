@@ -108,7 +108,7 @@ class DiscoverTable:LCObject{
         complete(record.praiseUserName?.value as! NSString)
 
         record.save { (succeed) in
-            print("保存成功")
+//            print("保存成功")
     
         }
     }

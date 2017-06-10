@@ -22,20 +22,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         LeanCloud.initialize(applicationID: "VJwCgWQYIPacfeOI7pxpXSgp-gzGzoHsz", applicationKey: "4LsyJc4v7hyG3u4yoDadrLBR")
-
         ConfigAMapLocation()
         UserDefaults.standard.set("false", forKey: "login")
         UserDefaults.standard.set("none", forKey: "loginUser")
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         let maxWidth = UIScreen.main.bounds.width * 0.9
         self.window?.rootViewController = DRrawerViewController.drawerWithViewController(_leftViewcontroller: LeftViewController.init(),_mainViewController: MainViewController.init(),DrawerMaxWithd:maxWidth)
-        
         UIApplication.shared.statusBarStyle = .lightContent
-       
        UINavigationBar.appearance().tintColor = UIColor.white
        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
         //为导航栏设置字体颜色等
-        
         self.window?.makeKeyAndVisible()
         
         return true
@@ -69,11 +65,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     writeArray.write(toFile: filePath, atomically: true)
                 }
                 catch{
-                    print(error)
+//                    print(error)
                 }
                 DispatchQueue.main.async
                     {
-                        print("写入城市列表完成👌")
+//                        print("写入城市列表完成👌")
                 }
         }
         

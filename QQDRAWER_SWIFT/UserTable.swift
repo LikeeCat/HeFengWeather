@@ -36,10 +36,10 @@ class UserTable : LCObject{
         query.find { (result) in
             let user = result.objects?.first as! UserTable
             if passWord != user.passWord?.value{
-                print("登录失败")
+//                print("登录失败")
                 user.isLogin = false
             }else{
-                print("登录成功")
+//                print("登录成功")
                 user.isLogin = true
                 issucceed = true
             }

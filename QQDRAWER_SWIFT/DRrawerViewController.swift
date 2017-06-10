@@ -198,7 +198,7 @@ class DRrawerViewController: UIViewController {
     //MARK: 加载所有的城市列表
     func getMyCityList(){
         let filePath =  FileOperation.getDocPath().appendingPathComponent(FileOperation.userCityList)
-        print(filePath)
+//        print(filePath)
        var dataArray = NSArray.init(contentsOfFile: filePath) as! [String]
 
         let notice = Notification.init(name: Notification.Name(rawValue: "change"), object: dataArray , userInfo: nil)

@@ -51,7 +51,7 @@ class UserRelationShipTable:LCObject{
                 isok = true
               }
             else{
-                print("添加失败")
+//                print("添加失败")
             }
            complete(isok)
         }
@@ -60,7 +60,7 @@ class UserRelationShipTable:LCObject{
     
     //MARK:-获取关注列表
     static func getMyAttionUser(own:NSString,complation:@escaping (_ userResult:[UserRelationShipTable])->()){
-        print(own)
+//        print(own)
         let query = LCQuery.init(className: self.objectClassName())
         query.whereKey("ownName", .equalTo(own as! String))
         query.find { (results) in

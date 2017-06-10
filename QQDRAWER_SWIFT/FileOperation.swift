@@ -33,7 +33,7 @@ struct FileOperation {
         let filePath = docPath.appendingPathComponent(fileName)
 
         let isExited =  self.fileManager.fileExists(atPath: filePath)
-        print(filePath)
+//        print(filePath)
         return isExited
     }
     //MARK: -在制定位置创建文件
